@@ -1,0 +1,110 @@
+/* style.css tic-tac-toe */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 15px;
+}
+
+.status {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 2px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cell:hover {
+    background-color: #eaeaea;
+}
+
+#restart-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#restart-btn:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .board {
+        grid-template-columns: repeat(3, 90px);
+    }
+
+    .cell {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .status {
+        font-size: 1rem;
+    }
+
+    .board {
+        grid-template-columns: repeat(3, 80px);
+        gap: 4px;
+    }
+
+    .cell {
+        width: 80px;
+        height: 80px;
+        font-size: 1.8rem;
+    }
+
+    #restart-btn {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+}
