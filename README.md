@@ -34,7 +34,7 @@ vanilla-js-tic-tac-toe/
 1. Clone the repository:
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/Areej39/vanilla-js-tic-tac-toe
 ```
 
 2. Open the project folder:
